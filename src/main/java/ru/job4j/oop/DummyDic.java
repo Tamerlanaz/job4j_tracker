@@ -10,6 +10,5 @@ public class DummyDic {
         DummyDic paul = new DummyDic();
         String say = paul.engToRus("all");
         System.out.println(say);
-
     }
 }
