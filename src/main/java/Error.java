@@ -14,7 +14,6 @@ public class Error {
     }
 
     public static void main(String[] args) {
-        //Error error = new Error();
         Error error = new Error(true, 1, "Хорошо.");
         Error error1 = new Error(true, 10, "Отлично!");
         Error error2 = new Error(false, 0, "Ищите лучше!");
