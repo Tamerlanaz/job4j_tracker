@@ -20,7 +20,7 @@ public class Shop {
             Product product = products[i];
             if (product == null) {
                 index = i;
-                return index;
+                break;
             }
         }
         return index;
