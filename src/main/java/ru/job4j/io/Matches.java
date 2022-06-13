@@ -14,11 +14,12 @@ public class Matches {
             int matches = Integer.parseInt(input.nextLine());
             if (matches > count || matches > 3 || matches < 1) {
                 System.out.println(player + " Введено неверное число. Введите число от 1 до 3, не превышающее количество оставшихся спичек на столе.");
-                matches = Integer.parseInt(input.nextLine());
+            } else {
+                turn = !turn;
+                count = count - matches;
+                System.out.println("На столе осталось " + count + " спичек.");
             }
-            turn = !turn;
-            count = count - matches;
-            System.out.println("На столе осталось " + count + " спичек.");
+
         }
         if (!turn) {
             System.out.println("Выиграл первый игрок");
